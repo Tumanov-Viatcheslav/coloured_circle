@@ -29,15 +29,15 @@ public class Main {
                 System.out.println("Green area");
                 return;
             }
-
-            if ((y < 0) && (x < 0)) {
-                System.out.println("Blue area");
-                return;
-            }
-
-            if ((x > 0) && (y < 0) && (y > -x)) {
-                System.out.println("Red area");
-                return;
+            if ((y < 0)) {
+                if ((x < 0)) {
+                    System.out.println("Blue area");
+                    return;
+                }
+                if ((x > 0) && (y > -x)) {
+                    System.out.println("Red area");
+                    return;
+                }
             }
             System.out.println("White area");
         }
