@@ -6,7 +6,7 @@ public class Coordinates {
     }
 
     public boolean isThirdQuarter() {
-        return this.y < 0;
+        return (this.x < 0) && (this.y < 0);
     }
 
     public boolean isInsideAbs() {
