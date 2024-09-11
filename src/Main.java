@@ -34,6 +34,7 @@ public class Main {
                     System.out.println("Blue area");
                     return;
                 }
+                //Вероятно, тут можно было бы сделать else, но я не уверен какое поведение ожидается от нуля (осей координат)
                 if ((x > 0) && (y > -x)) {
                     System.out.println("Red area");
                     return;
